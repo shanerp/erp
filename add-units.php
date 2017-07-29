@@ -41,7 +41,14 @@
 						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="formWrapper">
                                 <form method="post" action="<?PHP $_SERVER['PHP_SELF']; ?>" enctype="multipart/form-data">
-                                    
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group no_padd">
+                                        <label>Symbol : <em class="small errorText"></em></label>
+                                        <input type="text" class="form_input" name="unit_symbol" placeholder="Symbol">
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group no_padd">
+                                        <label>Full form: <em class="small errorText"></em></label>
+                                        <input type="text" class="form_input" name="unit_full_form" placeholder="Full form">
+                                    </div>
                                 </form>
                             </div>
                         </div>
