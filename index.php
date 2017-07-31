@@ -15,13 +15,16 @@
         $uid = $_POST['uid'];
         $pass = $_POST['pass'];
         
-        $query = "SELECT userId FROM users WHERE username = '$uid' AND password = '$pass'";
+        $query = "SELECT userId FROM users WHERE username = '$uid' AND password = '$pass' AND userType = 'user'";
         $result = $con->query($query);
         if( $result->num_rows > 0 )
         {
             $row = $result->fetch_object();
             $userId = $row->userId;
+			unset($_SESSION['userId']);
+			unset($_SESSION['userType']);
             $_SESSION['userId'] = $userId;
+			$_SESSION['userType'] = 'user';
             header('Location:'. $site_path.'dashboard.php');
             exit();
         }
