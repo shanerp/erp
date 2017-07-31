@@ -9,7 +9,7 @@
                 </a>
             </li>
             <li>
-                <a href="buy-prducts.php">
+                <a href="purchase.php">
                     <span class="nav-label">Purchase</span>
                     <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
                 </a>
@@ -39,20 +39,6 @@
                     </li>
                     <li>
                         <a href="view-products.php">View Products</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#" id="toggle">
-                    <span class="nav-label">Units</span>
-                    <span class="glyphicon <?php echo ($current_page_menu == 'unit') ? 'glyphicon-minus' : 'glyphicon-plus' ?>" aria-hidden="true"></span>
-                </a>
-                <ul class="sub_menu list-unstyled <?php echo ($current_page_menu == 'unit') ? 'sidebar-dropdown-on' : '' ?>">
-                    <li>
-                        <a href="add-units.php">Add Units</a>
-                    </li>
-                    <li>
-                        <a href="view-units.php">View Units</a>
                     </li>
                 </ul>
             </li>

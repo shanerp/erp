@@ -1,8 +1,0 @@
-1. Option to save bill PDF
-
-2. Print bill
-
-3. On change of TAX rate keep record of previous taxes also.
-
-4. On every purchase and sell get the TAX rate and save it in the PURCHASE and SELL table. This is because TAXES may change on time.
-
