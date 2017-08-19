@@ -57,6 +57,37 @@
                             </div>
                         </div>
 					</div>
+					
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="formWrapper">
+                                <form method="post" action="<?PHP $_SERVER['PHP_SELF']; ?>" enctype="multipart/form-data">
+                                    <label>Conversions <em class="small errorText"></em></label>
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group no_padd">
+                                        <input type="text" class="form_input" name="unit_symbol" placeholder="Symbol">
+                                    </div>
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group no_padd">
+                                        <select class="form_input" name="unit_symbol" id="unit_symbol">
+											<option value="kg">kg</option>
+										</select>
+                                    </div>
+									
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group no_padd">
+                                        <input type="text" class="form_input" name="unit_symbol" placeholder="Symbol">
+                                    </div>
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group no_padd">
+                                        <select class="form_input" name="unit_symbol" id="unit_symbol">
+											<option value="grams">grams</option>
+										</select>
+                                    </div>
+									
+									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group no_padd">
+                                        <input type="submit" class="btn btn-primary form_submit_btn" name="submit" value="Save">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+					</div>
 				</div> <!-- .container-fluid -->
 				
             </div>	<!-- .dashboard-content -->
