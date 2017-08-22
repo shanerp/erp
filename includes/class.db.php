@@ -362,9 +362,6 @@ class DB
      */
     public function insert($table, $variables = array(), $queryPrint = 0, $getInsertedID = 0)
     {
-        $nebula_db = $this->getNebulaDB();
-
-
         $sql = "INSERT INTO " . $table;
         $fields = array();
         $values = array();
